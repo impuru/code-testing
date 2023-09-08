@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background:#eee
 }
 
 input[type=text],
@@ -28,6 +29,7 @@ label {
   max-width: 600px;
   border:1px solid #aaa;
   margin: 10px auto;
+  background-color: #fff;
 }
 
 
@@ -50,6 +52,8 @@ label {
   gap: 1em
 }
 .border{
-  border:1px solid #aaa;
+  border: 1px solid #fff;
   padding: 5px;
+  background: #3c3a3a;
+  color: #fff;
 }
