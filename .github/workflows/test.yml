@@ -1,0 +1,24 @@
+name: Run Tests
+on:
+  push:
+    branches:
+      -master
+
+jobs:
+  test:
+     runs-on: ubuntu-latest
+
+  steps:
+      - name: Checkout code
+      uses: actions/checkout@v3
+
+      - name: Use Node.js14
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+      - name: Install dependency
+      run: npm install
+
+      -name: Run Tests
+      run: npm test
